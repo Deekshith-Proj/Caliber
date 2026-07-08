@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-primary: #0D3B66;
+  --color-secondary: #1F7A8C;
+  --color-accent: #FFB703;
+  --color-background: #F8FAFC;
+  --color-foreground: #111827;
+
+  /* Typography */
+  --font-heading: var(--font-poppins);
+  --font-body: var(--font-inter);
+  --font-numbers: var(--font-space-grotesk);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
